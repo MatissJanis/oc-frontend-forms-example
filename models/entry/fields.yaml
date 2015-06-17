@@ -1,0 +1,30 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    # ID field is displayed only in the backend
+    id:
+        label: ID
+        disabled: true
+        context: [create, update]
+
+    title:
+        label: Title
+        comment: The title of this entry
+        span: left
+
+    # Slogan field is displayed only in the front-end
+    slogan:
+        label: Slogan
+        comment: This field is displayed only in frontend
+        span: right
+        context: [frontend]
+
+    body:
+        label: Body
+        type: textarea
+        commentAbove: The body should contain some information.
+
+

@@ -1,0 +1,9 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Model Form Field configuration
+form: $/mja/forms/models/entry/fields.yaml
+
+# Model Class name
+modelClass: Mja\Forms\Models\Entry

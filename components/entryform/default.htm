@@ -1,0 +1,15 @@
+<div class="confirm-container bg-success hide">
+    <p>Successfully created a new entry!</p>
+</div>
+
+<form role="form"
+    data-request="{{ __SELF__ }}::onSave"
+    data-request-success="$el.hide();$('.confirm-container').removeClass('hide');">
+
+    {{ form.formRender()|raw }}
+
+    <div class="form-group">
+        <button class="btn btn-primary btn-block btn-lg" type="submit" value="register">Create</button>
+    </div>
+
+</form>
